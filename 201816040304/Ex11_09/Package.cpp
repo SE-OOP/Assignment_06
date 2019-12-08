@@ -61,7 +61,7 @@ void Package::print()
     cout << "SenderName: " << SenderName << "  SenderAddress: "<<SenderAddress << endl;
     cout << "SenderCity: " << SenderCity << "  SenderProvince: "<<SenderProvince << endl;
     cout << "SenderPostalCode: " << SenderPostalCode  << endl;
-    cout << "AddresseeName: " << SenderName << "  AddresseeAddress: "<<SenderAddress << endl;
-    cout << "AddresseeCity: " << SenderCity << "  AddresseeProvince: "<<SenderProvince << endl;
-    cout << "AddresseePostalCode: " << SenderPostalCode  <<"  Weight: " << Weight<< endl;
+    cout << "AddresseeName: " << AddresseeName << "  AddresseeAddress: "<<AddresseeAddress << endl;
+    cout << "AddresseeCity: " << AddresseeCity << "  AddresseeProvince: "<<AddresseeProvince << endl;
+    cout << "AddresseePostalCode: " << AddresseePostalCode  <<"  Weight: " << Weight<< endl;
 }
