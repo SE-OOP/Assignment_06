@@ -1,0 +1,37 @@
+#include <iostream>
+#include <stdexcept>
+#include "Package.h"
+
+using namespace std;
+
+int main()
+{
+    TwoDayPackage
+         P1( "Bob","June","Amecian","New York","New York State",
+            "10041NY212","10","10","10")
+    cout << "The Package is TwoDayPackage: \n"
+         << "The packageSender is: \n" << P1.getPackageSender()
+         << "The packageRecipients is: \n" << P1.getPackageRecipients()
+         << "The packageRecipientsAddress is: \n" << P1.getPackageRecipientsAddress()
+         << "The packageRecipientsCity is: \n" << P1.getPackageRecipientsCity()
+         << "The packageRecipientsState is: \n" << P1.getPackageRecipientsState()
+         << "The packageRecipientsCode is: \n" << P1.getetPackageRecipientsCode()
+         << "The packageWeight is: \n" << P1.getPackageWeight()
+         << "The packageFee is: \n" << P1.getPackageFee()
+         << "The twodayFee is: \n" << P1.gettwodayFee()
+         << "The cacluateCost is: \n" << P1.cacluateCost() << endl;
+    OvernightPackage
+         P2( "Smith","Jones","Amecian","Washington","Washington D.C",
+            "20237","10","10","10")
+    cout << "The Package is TwoDayPackage: \n"
+         << "The packageSender is: \n" << P2.getPackageSender()
+         << "The packageRecipients is: \n" << P2.getPackageRecipients()
+         << "The packageRecipientsAddress is: \n" << P2.getPackageRecipientsAddress()
+         << "The packageRecipientsCity is: \n" << P2.getPackageRecipientsCity()
+         << "The packageRecipientsState is: \n" << P2.getPackageRecipientsState()
+         << "The packageRecipientsCode is: \n" << P2.getetPackageRecipientsCode()
+         << "The packageWeight is: \n" << P2.getPackageWeight()
+         << "The packageFee is: \n" << P2.getPackageFee()
+         << "The extraFee is: \n" << P2.getextraFee()
+         << "The cacluateCost is: \n" << P2.cacluateCost() << endl;
+}
