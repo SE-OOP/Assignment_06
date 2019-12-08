@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+#include "OvernightPackage.h"
+#include"Package.h"
+#include "TwoDayPackage.h"
+using namespace std;
+int main()
+{
+    Package a("zhang","jiang","henan","zhengzhou","basailuona","41222",20.0,15.0);
+    OvernightPackage b("zhang","jiang","henan","zhengzhou","basailuona","41222",20.0,15.0,2.0);
+    TwoDayPackage c("zhang","jiang","henan","zhengzhou","basailuona","41222",20.0,15.0,2.0);
+    cout<<"Package: "<<a.calculateCost()<<endl;
+    cout<<"OvernightPackage: "<<b.calculateCost()<<endl;
+    cout<<"TwoDayPackage: "<<c.calculateCost()<<endl;
+    return 0;
+}
