@@ -1,0 +1,31 @@
+#include "OvernightPackage.h"
+#include <iostream>
+
+using namespace std;
+
+OvernightPackage::OvernightPackage(string ts,string rp,string ad,string pt,double w,double c,double o)
+: Package(ts,rp,ad,pt,w,c)
+{
+    ocost=o;
+}
+
+double OvernightPackage::getOCost()
+{
+    return getCost()+ocost;
+}
+
+double OvernightPackage::calculateCost()
+{
+    return getOCost()*getWeight();
+}
+
+void OvernightPackage::print()
+{
+    cout<<"TheSender : "<<gettheSender()<<endl;
+    cout<<"Recipient : "<<getRecipient()<<endl;
+    cout<<"Address : "<<getAddress()<<endl;
+    cout<<"Postcode : "<<getPostcode()<<endl;
+    cout<<"Weight : "<<getWeight()<<endl;
+    cout<<"Cost : "<<getOCost()<<endl;
+    cout<<"Total : "<<calculateCost()<<endl;
+}
